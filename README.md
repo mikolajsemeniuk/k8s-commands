@@ -2,6 +2,11 @@
 
 Set of kubectl commands
 
+## Nodes
+
+### Get nodes
+* `kubectl get nodes`
+
 ## Context
 
 ### Get contexts
@@ -21,9 +26,11 @@ Set of kubectl commands
 ### Get all namespaces
 
 * `kubectl get namespaces`
+* `kubectl get ns`
 
 ### Set default namespace
 
+* `kubectl config set-context --current -n {namespace}`
 * `kubectl config set-context --current --namespace={namespace}`
 
 ## Pods
@@ -33,11 +40,6 @@ Set of kubectl commands
 * `kubectl get po`
 * `kubectl get pods`
 
-### Get pods in selected namespace
-
-* `kubectl get po -n {namespace}`
-* `kubectl get pods -n {namespace}`
-
 ### Show pod environment variables
 
 * `kubectl exec -it {pod_id} -- env`
@@ -45,6 +47,24 @@ Set of kubectl commands
 ### Show pod logs
 
 * `kubectl logs {pod_id}`
+
+## Services
+
+### Get services
+* `kubectl get services`
+* `kubectl get svc`
+
+## Deployments
+
+### Get deployments
+* `kubectl get deployments`
+* `kubectl get deploy`
+
+## Replicasets
+
+### Get replicasets
+* `kubectl get replicasets`
+* `kubectl get rs`
 
 ## Configmap
 
