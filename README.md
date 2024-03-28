@@ -40,6 +40,10 @@ Set of kubectl commands
 * `kubectl get po`
 * `kubectl get pods`
 
+### Describe pod
+
+* `kubectl describe po {pod_id}`
+
 ### Show pod environment variables
 
 * `kubectl exec -it {pod_id} -- env`
