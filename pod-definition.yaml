@@ -1,0 +1,20 @@
+# possible values:
+#  * pod: v1
+#  * service: v1
+#  * replicaSet: apps/v1
+#  * deployment: apps/v1
+apiVersion: v1
+# possible values:
+#  * Pod
+#  * Service
+#  * ReplicaSet
+#  * Deployment
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    app: myapp
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
