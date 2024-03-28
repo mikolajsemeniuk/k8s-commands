@@ -40,6 +40,9 @@ Set of kubectl commands
 * `kubectl get po`
 * `kubectl get pods`
 
+### Create pod from file
+* `kubectl apply -f {pod.yaml}`
+
 ### Describe pod
 
 * `kubectl describe po {pod_id}`
