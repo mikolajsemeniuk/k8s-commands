@@ -83,3 +83,8 @@ Set of kubectl commands
 ### Edit configmap
 
 * `kubectl edit {configmap}`
+
+## Port-Forward
+
+### Forward to local port:
+* `kubectl port-forward pod/{pod_id} 8080:80`
