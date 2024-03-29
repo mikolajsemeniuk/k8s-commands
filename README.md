@@ -2,6 +2,9 @@
 
 Set of kubectl commands
 
+## All
+`kubectl get all`
+
 ## Nodes
 
 ### Get nodes
@@ -73,11 +76,19 @@ Set of kubectl commands
 * `kubectl get replicationcontrollers`
 * `kubectl get rc`
 
+### Scale replication controller
+* `kubectl scale --replicas=6 rc/{replication controller name}`
+* `kubectl scale --replicas=6 replicationcontrollers/{replication controller name}`
+
 ## Replicasets
 
 ### Get replicasets
 * `kubectl get replicasets`
 * `kubectl get rs`
+
+### Scale replicaset
+* `kubectl scale --replicas=6 rs/{replica name}`
+* `kubectl scale --replicas=6 replicaset/{replica name}`
 
 ## Configmap
 
