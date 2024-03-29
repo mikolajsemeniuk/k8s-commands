@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: new-rc
+  name: new-rs
   labels:
-    type: rc
+    type: rs
 spec:
   template:
     metadata:
