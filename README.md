@@ -67,6 +67,12 @@ Set of kubectl commands
 * `kubectl get deployments`
 * `kubectl get deploy`
 
+## Replication controller
+
+### Get replication controllers
+* `kubectl get replicationcontrollers`
+* `kubectl get rc`
+
 ## Replicasets
 
 ### Get replicasets
