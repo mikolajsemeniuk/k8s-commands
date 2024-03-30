@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy
+  labels:
+    type: deploy
+spec:
+  template:
+    metadata:
+      name: pod
+      labels:
+        type: pod
+    spec:
+      containers:
+        - name: nginx-controller
+          image: nginx
+  replicas: 4
+  selector:
+    matchLabels:
+      type: pod
+  strategy:
+    # Default strategy
+    type: RollingUpdate
+    rollingUpdate:
+      # how much pods kubernetes can destroy
+      maxUnavailable: 1 # or 25%
+      # how much pods k8s can create
+      maxSurge: 1 # or 50%
+  # second available strategy
+  # strategy:
+  #   type: Recreate
