@@ -58,11 +58,25 @@ Set of kubectl commands
 
 * `kubectl logs {pod_id}`
 
-## Services
+## Replication controller
 
-### Get services
-* `kubectl get services`
-* `kubectl get svc`
+### Get replication controllers
+* `kubectl get replicationcontrollers`
+* `kubectl get rc`
+
+### Scale replication controller
+* `kubectl scale --replicas=6 rc/{replication controller name}`
+* `kubectl scale --replicas=6 replicationcontrollers/{replication controller name}`
+
+## Replicasets
+
+### Get replicasets
+* `kubectl get replicasets`
+* `kubectl get rs`
+
+### Scale replicaset
+* `kubectl scale --replicas=6 rs/{replica name}`
+* `kubectl scale --replicas=6 replicaset/{replica name}`
 
 ## Deployments
 
@@ -85,25 +99,11 @@ Set of kubectl commands
 ### Rollback to given revision
 * `kubectl rollout undo deployment/deploy --to-revision=2`
 
-## Replication controller
+## Services
 
-### Get replication controllers
-* `kubectl get replicationcontrollers`
-* `kubectl get rc`
-
-### Scale replication controller
-* `kubectl scale --replicas=6 rc/{replication controller name}`
-* `kubectl scale --replicas=6 replicationcontrollers/{replication controller name}`
-
-## Replicasets
-
-### Get replicasets
-* `kubectl get replicasets`
-* `kubectl get rs`
-
-### Scale replicaset
-* `kubectl scale --replicas=6 rs/{replica name}`
-* `kubectl scale --replicas=6 replicaset/{replica name}`
+### Get services
+* `kubectl get services`
+* `kubectl get svc`
 
 ## Configmap
 
