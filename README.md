@@ -70,6 +70,21 @@ Set of kubectl commands
 * `kubectl get deployments`
 * `kubectl get deploy`
 
+### Update image of deployment
+* `kubectl set image deployment/{deployment name} nginx=nginx:1.9.1`
+
+### Check last deployment status (how pods were created and destroyed)
+* `kubectl rollout status deploy/deploy`
+
+### Check history of all revisions in given deployment
+* `kubectl rollout history deploy/deploy`
+
+### Rollback latest version
+* `kubectl rollout undo deploy/deploy`
+
+### Rollback to given revision
+* `kubectl rollout undo deployment/deploy --to-revision=2`
+
 ## Replication controller
 
 ### Get replication controllers
